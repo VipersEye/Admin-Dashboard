@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body {
     margin: 0;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,17 +22,219 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
 }
 
+/* nav =========================== */
+
 .nav {
     grid-row: 1 / -1;
 
     display: grid;
+    row-gap: 60px;
+    grid-auto-rows: min-content;
+    justify-content: center;
+
+    padding-top: 1.7rem;
+
+    background: #1992d4;
 }
+
+.nav__logo {
+    height: 2.5rem;
+}
+
+.nav__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.nav > .nav__link {
+    font-size: 2rem;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+
+    transition: color .3s linear;
+}
+
+.nav__link:hover {
+    color: #facc15;
+}
+
+.nav__icon {
+    height: 1.8rem;
+    
+    fill: #fff;
+
+    transition: fill .3s linear;
+}
+
+.nav__link:hover .nav__icon {
+    fill: #facc15;
+}
+
+/* header ======================= */
 
 .header {
     grid-column: 2 / -1;
 }
 
-.header, .nav, .projects, aside {
+.header__search {
+
+}
+
+.header__search-icon {
+
+}
+
+.header__search-input {
+
+}
+
+.header__notify-icon {
+
+}
+
+.header__avatar {
+
+}
+
+.header__avatar_big {
+
+}
+
+.header__notify-user {
+
+}
+
+.header__user {
+
+}
+
+.header__user-info {
+
+}
+
+.header__user-greeting {
+
+}
+
+.header__user-name {
+
+}
+
+.header__btns {
+
+}
+
+.header__btn {
+
+}
+
+/* projects ====================== */
+
+.projects {
+
+}
+
+.section-header {
+
+}
+
+.projects__inner {
+
+}
+
+.projects__item {
+
+}
+
+.projects__content {
+
+}
+
+.projects__header {
+
+}
+
+.projects__text {
+
+}
+
+.projects__social {
+
+}
+
+.projects__btn {
+
+}
+
+.projects__btn-icon {
+
+}
+
+/* aside ========================= */
+
+.aside {
+
+}
+
+.aside__item {
+
+}
+
+.section-header {
+
+}
+
+.announcements {
+
+}
+
+.announ__item {
+
+}
+
+.announ__header {
+
+}
+
+.announ__text {
+
+}
+
+.trending {
+
+}
+
+.trending__item {
+
+}
+
+.trending__avatar {
+
+}
+
+.trending__user {
+
+}
+
+.trending__name {
+
+}
+
+.trending__status {
+
+}
+
+.header, .projects, aside {
     border: 5px solid #000;
 }
 
