@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 280px 1fr 300px;
+    grid-template-rows: 170px 1fr;
+
+    min-height: 100vh;
+}
+
+.nav {
+    grid-row: 1 / -1;
+
+    display: grid;
+}
+
+.header {
+    grid-column: 2 / -1;
+}
+
+.header, .nav, .projects, aside {
+    border: 5px solid #000;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+}
