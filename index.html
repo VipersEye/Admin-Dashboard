@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    <!-- svg sprite -->
+
     <svg style="display: none;">
 
         <symbol id="icon-home" viewBox="126 56 448 448">
@@ -114,7 +116,7 @@
 
     <div class="container">
 
-<!-- nav -->
+        <!-- nav -->
 
         <nav class="nav">
             <a href="#" class="nav__link">
@@ -184,7 +186,7 @@
             </div>
         </nav>
 
-<!-- header -->
+        <!-- header -->
 
         <header class="header">
 
@@ -219,179 +221,231 @@
             </div>
         </header>
 
-<!-- projects -->
+        <div class="wrapper">
 
-        <main class="projects">
-            <h2 class="section-header">your projects</h2>
-            <div class="projects__inner">
+            <!-- projects -->
 
-                <div class="projects__item">
-                    <div class="projects__content">
-                        <h3 class="projects__header">super cool project</h3>
-                        <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam corrupti facere commodi sapiente inventore quam!</p>
-                    </div>
-                    <div class="projects__social">
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-favorites"></use>
-                            </svg>
-                        </button>
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-views"></use>
-                            </svg>
-                        </button>
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-fork"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+            <main class="projects">
+                <h2 class="section-header">your projects</h2>
+                <div class="projects__inner">
 
-                <div class="projects__item">
-                    <div class="projects__content">
-                        <h3 class="projects__header">less cool project</h3>
-                        <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sapiente similique eos. Saepe maxime sequi modi. Numquam voluptates deleniti corporis quas ullam veritatis at nam totam?</p>
-                    </div>
-                    <div class="projects__social">
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-favorites"></use>
-                            </svg>
-                        </button>
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-views"></use>
-                            </svg>
-                        </button>
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-fork"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="projects__item">
-                    <div class="projects__content">
-                        <h3 class="projects__header">impossible app</h3>
-                        <p class="projects__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit mollitia cupiditate non enim.</p>
-                    </div>
-                    <div class="projects__social">
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-favorites"></use>
-                            </svg>
-                        </button>
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-views"></use>
-                            </svg>
-                        </button>
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-fork"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="projects__item">
-                    <div class="projects__content">
-                        <h3 class="projects__header">easy app project</h3>
-                        <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequuntur molestiae ratione est facilis exercitationem, quis sed iusto illo ducimus.</p>
-                    </div>
-                    <div class="projects__social">
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-favorites"></use>
-                            </svg>
-                        </button>
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-views"></use>
-                            </svg>
-                        </button>
-                        <button class="projects__btn" type="button">
-                            <svg class="projects__btn-icon">
-                                <use xlink:href="#icon-fork"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </main>
-
-<!-- aside -->
-
-        <aside class="aside">
-
-            <div class="aside__item">
-                <h2 class="section-header">Announcements</h2>
-
-                <div class="announcements">
-                    <div class="announ__item">
-                        <h3 class="announ__header">site maintenance</h3>
-                        <p class="announ__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quidem vel perspiciatis?</p>
-                    </div>
-                    <div class="announ__item">
-                        <h3 class="announ__header">community share day</h3>
-                        <p class="announ__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla error quo id sunt!</p>
-                    </div>
-                    <div class="announ__item">
-                        <h3 class="announ__header">updated privacy policy</h3>
-                        <p class="announ__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quasi quisquam aut aperiam esse deserunt?</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="aside__item">
-
-                <h2 class="section-header">Trending</h2>
-
-                <div class="trending">
-
-                    <div class="trending__item">
-                        <img class="trending__avatar" src="" alt="user avatar">
-                        <div class="trending__user">
-                            <div class="trending__name">@tegan</div>
-                            <div class="trending__status">world peace builder</div>
+                    <div class="projects__item">
+                        <div class="projects__content">
+                            <h3 class="projects__header">super cool project</h3>
+                            <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam corrupti facere commodi sapiente inventore quam!</p>
+                        </div>
+                        <div class="projects__social">
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-favorites"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-views"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-fork"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="trending__item">
-                        <img class="trending__avatar" src="" alt="user avatar">
-                        <div class="trending__user">
-                            <div class="trending__name">@morgan</div>
-                            <div class="trending__status">super cool project</div>
+                    <div class="projects__item">
+                        <div class="projects__content">
+                            <h3 class="projects__header">less cool project</h3>
+                            <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sapiente similique eos. Saepe maxime sequi modi. Numquam voluptates deleniti corporis quas ullam veritatis at nam totam?</p>
+                        </div>
+                        <div class="projects__social">
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-favorites"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-views"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-fork"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="trending__item">
-                        <img class="trending__avatar" src="" alt="user avatar">
-                        <div class="trending__user">
-                            <div class="trending__name">@kendall</div>
-                            <div class="trending__status">life changing app</div>
+                    <div class="projects__item">
+                        <div class="projects__content">
+                            <h3 class="projects__header">impossible app</h3>
+                            <p class="projects__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit mollitia cupiditate non enim.</p>
+                        </div>
+                        <div class="projects__social">
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-favorites"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-views"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-fork"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="trending__item">
-                        <img class="trending__avatar" src="" alt="user avatar">
-                        <div class="trending__user">
-                            <div class="trending__name">@alex</div>
-                            <div class="trending__status">no trafic maker</div>
+                    <div class="projects__item">
+                        <div class="projects__content">
+                            <h3 class="projects__header">easy app project</h3>
+                            <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequuntur molestiae ratione est facilis exercitationem, quis sed iusto illo ducimus.</p>
+                        </div>
+                        <div class="projects__social">
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-favorites"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-views"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-fork"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="projects__item">
+                        <div class="projects__content">
+                            <h3 class="projects__header">ad blocker</h3>
+                            <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem error dolorum fugit earum qui! Voluptatum, eum expedita!</p>
+                        </div>
+                        <div class="projects__social">
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-favorites"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-views"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-fork"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="projects__item">
+                        <div class="projects__content">
+                            <h3 class="projects__header">money maker</h3>
+                            <p class="projects__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt corrupti, delectus ad rerum sed veritatis iure sapiente quis a quas, expedita omnis numquam.</p>
+                        </div>
+                        <div class="projects__social">
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-favorites"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-views"></use>
+                                </svg>
+                            </button>
+                            <button class="projects__btn" type="button">
+                                <svg class="projects__btn-icon">
+                                    <use xlink:href="#icon-fork"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
 
                 </div>
-            </div>
+            </main>
 
-        </aside>
+            <!-- aside -->
 
-    </div>
+            <aside class="aside">
+
+                <div class="aside__item">
+                    <h2 class="section-header">Announcements</h2>
+
+                    <div class="announcements">
+                        <div class="announ__item">
+                            <h3 class="announ__header">site maintenance</h3>
+                            <p class="announ__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quidem vel perspiciatis?</p>
+                        </div>
+                        <div class="announ__item">
+                            <h3 class="announ__header">community share day</h3>
+                            <p class="announ__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla error quo id sunt!</p>
+                        </div>
+                        <div class="announ__item">
+                            <h3 class="announ__header">updated privacy policy</h3>
+                            <p class="announ__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quasi quisquam aut aperiam esse deserunt?</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="aside__item">
+
+                    <h2 class="section-header">Trending</h2>
+
+                    <div class="trending">
+
+                        <div class="trending__item">
+                            <img class="trending__avatar" src="" alt="user avatar">
+                            <div class="trending__user">
+                                <div class="trending__name">@tegan</div>
+                                <div class="trending__status">world peace builder</div>
+                            </div>
+                        </div>
+
+                        <div class="trending__item">
+                            <img class="trending__avatar" src="" alt="user avatar">
+                            <div class="trending__user">
+                                <div class="trending__name">@morgan</div>
+                                <div class="trending__status">super cool project</div>
+                            </div>
+                        </div>
+
+                        <div class="trending__item">
+                            <img class="trending__avatar" src="" alt="user avatar">
+                            <div class="trending__user">
+                                <div class="trending__name">@kendall</div>
+                                <div class="trending__status">life changing app</div>
+                            </div>
+                        </div>
+
+                        <div class="trending__item">
+                            <img class="trending__avatar" src="" alt="user avatar">
+                            <div class="trending__user">
+                                <div class="trending__name">@alex</div>
+                                <div class="trending__status">no trafic maker</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </aside>
+
+        </div> <!-- wrapper -->
+
+    </div> <!-- container -->
     
 </body>
 </html>

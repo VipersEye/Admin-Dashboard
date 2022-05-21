@@ -18,7 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -26,12 +26,12 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
-.container {
+.container {    
     display: grid;
-    grid-template-columns: 18rem 1fr 19rem;
+    grid-template-columns: 18rem 1fr;
     grid-template-rows: 11rem 1fr;
 
-    min-height: 100vh;
+    height: 100vh;
 }
 
 /* nav =========================== */
@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__icon {
+    width: 1.8rem;
     height: 1.8rem;
     
     fill: var(--text-color-main);
@@ -119,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__search-icon {
+    width: 1.5rem;
     height: 1.5rem;
 }
 
@@ -150,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__notify-icon {
+    width: 1.5rem;
     height: 1.5rem;
 
     fill: var(--text-color-second);
@@ -221,105 +224,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__btn:active {
     background: var(--active-color);
-}
-
-/* projects ====================== */
-
-.projects {
-    background: #e2e8f0;
-}
-
-.section-header {
-
-}
-
-.projects__inner {
-
-}
-
-.projects__item {
-
-}
-
-.projects__content {
-
-}
-
-.projects__header {
-
-}
-
-.projects__text {
-
-}
-
-.projects__social {
-
-}
-
-.projects__btn {
-
-}
-
-.projects__btn-icon {
-
-}
-
-/* aside ========================= */
-
-.aside {
-    background: #e2e8f0;
-}
-
-.aside__item {
-
-}
-
-.section-header {
-
-}
-
-.announcements {
-
-}
-
-.announ__item {
-
-}
-
-.announ__header {
-
-}
-
-.announ__text {
-
-}
-
-.trending {
-
-}
-
-.trending__item {
-
-}
-
-.trending__avatar {
-
-}
-
-.trending__user {
-
-}
-
-.trending__name {
-
-}
-
-.trending__status {
-
-}
-
-svg {
-    width: 40px;
-    height: 40px;
 }
