@@ -34,6 +34,28 @@ h1, h2, h3, h4, h5, h6, p {
     height: 100vh;
 }
 
+.wrapper {
+    padding: 2rem 2rem 4rem 1rem;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 1.5rem;
+
+    background: #e2e8f0;
+}
+
+.card {
+    position: relative;
+    padding: 2rem 1.5rem;
+
+    display: grid;
+
+    background: var(--text-color-main);
+    border-radius: 0.7rem;
+
+    overflow: hidden;
+}
+
 /* nav =========================== */
 
 .nav {
@@ -224,4 +246,91 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header__btn:active {
     background: var(--active-color);
+}
+
+/* projects ======================= */
+
+.projects {
+    height: calc(100vh - 17rem);
+}
+
+.section-header {
+    margin-bottom: 1rem;
+    
+    font-size: 1.5rem;
+    color: var(--text-color-second);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.projects__inner {
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-auto-rows: 15rem;
+    gap: 2rem;
+
+    overflow: auto;
+}
+
+.projects__inner .card::before {
+    position: absolute;
+
+    display: block;
+    content: "";
+    width: 0.5rem;
+    height: 100%;
+
+    background-color: var(--hover-color);
+}
+
+.projects__header {
+    margin-bottom: 0.7rem;
+    
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: var(--text-color-second);
+}
+
+.projects__text {
+    display: -webkit-box;
+    
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color: var(--text-color-second);
+
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.projects__social {
+    place-self: end;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.projects__btn {
+    padding: 0;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.projects__btn-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    
+    color: var(--text-color-second);
+
+    transition: color 0.2s linear;
+}
+
+.projects__btn:hover .projects__btn-icon {
+    color: var(--hover-color);
 }
