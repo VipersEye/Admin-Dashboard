@@ -143,6 +143,8 @@ h1, h2, h3, h4, h5, h6, p {
     box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.281);
 }
 
+/* search section ======================= */
+
 .header__search {
     display: flex;
     align-items: center;
@@ -173,6 +175,8 @@ h1, h2, h3, h4, h5, h6, p {
     display: none;
 }
 
+/* notify section =======================  */
+
 .header__notify {
     justify-self: end;
 
@@ -188,11 +192,15 @@ h1, h2, h3, h4, h5, h6, p {
     fill: var(--text-color-second);
 
     transition: fill .3s linear;
+
+    cursor: pointer;
 }
 
-.header__notify-icon:hover {
+.header__notify-icon:hover, .header__notify-icon_active {
     fill: var(--hover-color);
 }
+
+/* user section =======================  */
 
 .header__avatar {
     height: 3rem;
@@ -223,6 +231,8 @@ h1, h2, h3, h4, h5, h6, p {
 .header__user-name {
     font-size: 1.7rem;
 }
+
+/* btns section =======================  */
 
 .header__btns {
     display: flex;
@@ -458,6 +468,83 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--text-card-color);
 }
 
+/* menu ======================= */
+
+.menu {
+    width: 2rem;
+    height: 2rem;
+
+    display: none;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.menu_active .menu__item::after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.menu_active .menu__item::before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.menu__item {
+    position: relative;
+    
+    width: 2rem;
+    height: .2rem;
+
+    background-color: var(--text-color-second);
+
+    transition: background-color 0.2s linear;
+
+}
+
+.menu__item::before, .menu__item::after {
+    display: block;
+    content: "";
+
+    position: absolute;
+
+    width: 2rem;
+    height: .2rem;
+
+    background-color: var(--text-color-second);
+
+    transition: all 0.2s linear;
+}
+
+.menu__item::after {
+    top: 10px;
+}
+
+.menu__item::before {
+    top: -10px;
+}
+
+.menu:hover .menu__item {
+    background-color: var(--hover-color);
+}
+
+.menu:hover .menu__item::before {
+    background-color: var(--hover-color);
+}
+
+.menu:hover .menu__item::after {
+    background-color: var(--hover-color);
+}
+
+
+.menu_active .menu__item {
+    background: none;
+}
+
+.menu_active:hover .menu__item {
+    background-color: transparent;
+}
+
 
 /* media ======================= */
 
@@ -480,6 +567,10 @@ h1, h2, h3, h4, h5, h6, p {
         width: 18rem;
 
         transition: left 0.3s linear;
+    }
+
+    .menu {
+        display: flex;
     }
 
     .header__user-name {
